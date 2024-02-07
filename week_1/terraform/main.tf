@@ -1,15 +1,15 @@
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "5.14.0"
     }
   }
 }
 
 provider "google" {
-    project     = "zoomcamp-2024-413415"
-    region      = "europe-west6"
+  project = "zoomcamp-2024-413415"
+  region  = "europe-west6"
 }
 
 resource "google_storage_bucket" "demo-bucket" {
